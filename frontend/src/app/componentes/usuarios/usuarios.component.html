@@ -1,0 +1,22 @@
+<app-menulateral></app-menulateral>
+<div class="ventanaflotante">
+    <div class="tituloventana">Usuarios</div>
+    <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let item of datos">
+                <tr (click)="SeleccionarEmail(item.email)">
+                    <td> {{item.email}} </td>
+                    <td> {{item.nombre}} </td>
+                    <td> {{item.estado}} </td>
+                  </tr>
+            </ng-container>
+        </tbody>
+      </table>
+</div>

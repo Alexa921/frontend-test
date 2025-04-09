@@ -5,93 +5,82 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PeticionService {
-requestOptions:any = {}
+  requestOptions: any = {};
 
-urlHost:string = "http://localhost:3000"
+  urlHost = "http://localhost:3001";
 
   constructor(private http: HttpClient) { }
 
-  Post(url:string, payload:any) {
-    let promise = new Promise ((resolve, reject) => {
+  Post(url: string, payload: any) {
+    return new Promise((resolve, reject) => {
       this.requestOptions = {
-        headers: new HttpHeaders({
+        headers: new HttpHeaders({}),
+        withCredentials: true 
+      };
 
-        }),
-        whithCredentials:true
-      }
-
-      this.http.post(url, payload,this.requestOptions).toPromise()
-      .then((res:any) => {
-        console.log(res)
-        resolve(res)
-      }).catch((err:any) => {
-        reject(err)
-      })
-    })
-    return promise
+      this.http.post(url, payload, this.requestOptions).toPromise()
+        .then((res: any) => {
+          console.log(res);
+          resolve(res);
+        }).catch((err: any) => {
+          console.error("Error en POST:", err);
+          reject(err);
+        });
+    });
   }
 
-  Put(url:string, payload:any) {
-    let promise = new Promise ((resolve, reject) => {
+  Put(url: string, payload: any) {
+    return new Promise((resolve, reject) => {
       this.requestOptions = {
-        headers: new HttpHeaders({
+        headers: new HttpHeaders({}),
+        withCredentials: true
+      };
 
-        }),
-        whithCredentials:true
-      }
-
-      this.http.put(url, payload,this.requestOptions).toPromise()
-      .then((res:any) => {
-        console.log(res)
-        resolve(res)
-      }).catch((err:any) => {
-        reject(err)
-      })
-    })
-    return promise
+      this.http.put(url, payload, this.requestOptions).toPromise()
+        .then((res: any) => {
+          console.log(res);
+          resolve(res);
+        }).catch((err: any) => {
+          console.error("Error en PUT:", err);
+          reject(err);
+        });
+    });
   }
 
-
-  Get(url:string) {
-    let promise = new Promise ((resolve, reject) => {
+  Get(url: string) {
+    return new Promise((resolve, reject) => {
       this.requestOptions = {
-        headers: new HttpHeaders({
+        headers: new HttpHeaders({}),
+        withCredentials: true
+      };
 
-        }),
-        whithCredentials:true
-      }
-
-      this.http.get(url,this.requestOptions).toPromise()
-      .then((res:any) => {
-        console.log(res)
-        resolve(res)
-      }).catch((err:any) => {
-        reject(err)
-      })
-    })
-    return promise
+      this.http.get(url, this.requestOptions).toPromise()
+        .then((res: any) => {
+          console.log(res);
+          resolve(res);
+        }).catch((err: any) => {
+          console.error("Error en GET:", err);
+          reject(err);
+        });
+    });
   }
 
-  Delete(url:string) {
-    let promise = new Promise ((resolve, reject) => {
+  Delete(url: string) {
+    return new Promise((resolve, reject) => {
       this.requestOptions = {
-        headers: new HttpHeaders({
+        headers: new HttpHeaders({}),
+        withCredentials: true
+      };
 
-        }),
-        whithCredentials:true
-      }
-
-      this.http.delete(url,this.requestOptions).toPromise()
-      .then((res:any) => {
-        console.log(res)
-        resolve(res)
-      }).catch((err:any) => {
-        reject(err)
-      })
-    })
-    return promise
+      this.http.delete(url, this.requestOptions).toPromise()
+        .then((res: any) => {
+          console.log(res);
+          resolve(res);
+        }).catch((err: any) => {
+          console.error("Error en DELETE:", err);
+          reject(err);
+        });
+    });
   }
-
-  
-
 }
+
