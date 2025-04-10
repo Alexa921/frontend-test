@@ -5,6 +5,7 @@ import { PeticionService } from '../../servicios/peticion.service';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 
+
 @Component({
   selector: 'app-login',
   standalone: true,
