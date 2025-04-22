@@ -6,81 +6,75 @@ import { Injectable } from '@angular/core';
 })
 export class PeticionService {
   requestOptions: any = {};
-
-  urlHost = "http://localhost:3001";
+  urlHost = "";  // Asegúrate de asignar correctamente la URL base.
 
   constructor(private http: HttpClient) { }
 
-  Post(url: string, payload: any) {
-    return new Promise((resolve, reject) => {
-      this.requestOptions = {
-        headers: new HttpHeaders({}),
-        withCredentials: true 
-      };
+  // Método POST refactorizado con async/await
+  async Post(url: string, payload: any) {
+    this.requestOptions = {
+      headers: new HttpHeaders({}),
+      withCredentials: true
+    };
 
-      this.http.post(url, payload, this.requestOptions).toPromise()
-        .then((res: any) => {
-          console.log(res);
-          resolve(res);
-        }).catch((err: any) => {
-          console.error("Error en POST:", err);
-          reject(err);
-        });
-    });
+    try {
+      const res = await this.http.post(url, payload, this.requestOptions).toPromise();
+      console.log('Respuesta del servidor (POST):', res);
+      return res;
+    } catch (err) {
+      console.error("Error en POST:", err);
+      throw err;
+    }
   }
 
-  Put(url: string, payload: any) {
-    return new Promise((resolve, reject) => {
-      this.requestOptions = {
-        headers: new HttpHeaders({}),
-        withCredentials: true
-      };
+  // Método PUT refactorizado con async/await
+  async Put(url: string, payload: any) {
+    this.requestOptions = {
+      headers: new HttpHeaders({}),
+      withCredentials: true
+    };
 
-      this.http.put(url, payload, this.requestOptions).toPromise()
-        .then((res: any) => {
-          console.log(res);
-          resolve(res);
-        }).catch((err: any) => {
-          console.error("Error en PUT:", err);
-          reject(err);
-        });
-    });
+    try {
+      const res = await this.http.put(url, payload, this.requestOptions).toPromise();
+      console.log('Respuesta del servidor (PUT):', res);
+      return res;
+    } catch (err) {
+      console.error("Error en PUT:", err);
+      throw err;
+    }
   }
 
-  Get(url: string) {
-    return new Promise((resolve, reject) => {
-      this.requestOptions = {
-        headers: new HttpHeaders({}),
-        withCredentials: true
-      };
+  // Método GET refactorizado con async/await
+  async Get(url: string) {
+    this.requestOptions = {
+      headers: new HttpHeaders({}),
+      withCredentials: true
+    };
 
-      this.http.get(url, this.requestOptions).toPromise()
-        .then((res: any) => {
-          console.log(res);
-          resolve(res);
-        }).catch((err: any) => {
-          console.error("Error en GET:", err);
-          reject(err);
-        });
-    });
+    try {
+      const res = await this.http.get(url, this.requestOptions).toPromise();
+      console.log('Respuesta del servidor (GET):', res);
+      return res;
+    } catch (err) {
+      console.error("Error en GET:", err);
+      throw err;
+    }
   }
 
-  Delete(url: string) {
-    return new Promise((resolve, reject) => {
-      this.requestOptions = {
-        headers: new HttpHeaders({}),
-        withCredentials: true
-      };
+  // Método DELETE refactorizado con async/await
+  async Delete(url: string) {
+    this.requestOptions = {
+      headers: new HttpHeaders({}),
+      withCredentials: true
+    };
 
-      this.http.delete(url, this.requestOptions).toPromise()
-        .then((res: any) => {
-          console.log(res);
-          resolve(res);
-        }).catch((err: any) => {
-          console.error("Error en DELETE:", err);
-          reject(err);
-        });
-    });
+    try {
+      const res = await this.http.delete(url, this.requestOptions).toPromise();
+      console.log('Respuesta del servidor (DELETE):', res);
+      return res;
+    } catch (err) {
+      console.error("Error en DELETE:", err);
+      throw err;
+    }
   }
 }
-

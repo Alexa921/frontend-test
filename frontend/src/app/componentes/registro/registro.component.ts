@@ -1,13 +1,15 @@
+
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { PeticionService } from '../../servicios/peticion.service';
 import Notiflix from 'notiflix';
 import { HeaderComponent } from '../header/header.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-registro',
   standalone: true,
-  imports: [FormsModule, HeaderComponent],
+  imports: [CommonModule, FormsModule, HeaderComponent],
   templateUrl: './registro.component.html',
   styleUrl: './registro.component.css'
 })

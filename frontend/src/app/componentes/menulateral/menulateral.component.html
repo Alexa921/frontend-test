@@ -1,15 +1,19 @@
 <div class="menu">
     <div class="avatar">
-        <img src="avatar.png" alt="Avatar del administrador">
+      <img src="avatar.png" alt="Avatar del administrador">
     </div>
-    <div class="lblnombre">Alexandra Restrepo</div>
-    <div class="lblrol">Administrador</div>
-
+    <div class="lblnombre">{{ nombre }}</div>
+    <div class="lblrol">{{ role }}</div>
+  
     <div class="submenu">
-        <div class="itemmenu" routerLink="/dashboard">Dashboard</div>
-        <div class="itemmenu" routerLink="/usuarios">Usuarios</div>
-        <div class="itemmenu" routerLink="/productos">Productos</div>
-        <div class="itemmenu" routerLink="/servicios">Servicios</div>
-        <div class="itemmenu" routerLink="/">Logout</div>
+      <div class="itemmenu" routerLink="/dashboard">Dashboard</div>
+  
+      <!-- ✅ SOLO para Administrador -->
+      <div class="itemmenu" routerLink="/usuarios">Usuarios</div>
+  
+      <div class="itemmenu" routerLink="/productos">Productos</div>
+      <div class="itemmenu" routerLink="/servicios">Servicios</div>
+      <div class="itemmenu" routerLink="/">Logout</div>
     </div>
-</div>
+  </div>
+  

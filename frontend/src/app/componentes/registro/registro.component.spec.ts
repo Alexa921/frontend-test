@@ -94,4 +94,3 @@ describe('RegistroComponent', () => {
     expect(Notiflix.Notify.failure).toHaveBeenCalledWith('El correo ya existe');
   });
 });
-
