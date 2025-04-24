@@ -1,0 +1,707 @@
+/*section1*/
+
+.img-portada {
+    width: 100%;
+    height: 990px;
+}
+
+h1 {
+    font-size: 120px;
+    font-family: sans-serif;
+    margin-top: -400px;
+    margin-left: 670px;
+    color: white;
+}
+
+.texto-portada {
+    font-size: 16px;
+    color: white;
+    margin-top: -10px;
+    margin-left: 760px;
+}
+
+.boton-portada {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #780000ef;
+    width: 220px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 800px;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+}
+
+/*section2-explorar la coleccion*/
+
+.titulo-section2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 300px;
+    margin-left: 180px;
+}
+
+/*CARDS*/
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    padding-top: 150px;
+    padding-left: 200px;
+  }
+  .card[_ngcontent-ng-c375509383] {
+    width: 400px;
+    height: 530px;
+    background-color: transparent;
+    margin-top: -60px;
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+  .img-card[_ngcontent-ng-c375509383] {
+    width: 400px;
+    height: 350px;
+    background-color: #c1c2c4;
+    margin-top: 0px;
+  }
+  
+  .card-body {
+    background-color: transparent;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    background-color: transparent;
+    margin-top: 10px;
+  }
+
+  /*Boton-agregar*/
+
+.boton-agregar {
+    width: 80px;
+    height: 30px;
+    background-color: #780000ef;
+    color: white;
+    border: none;
+    margin-top: 10px;
+  }
+
+/*section3-mujer y hombre*/
+
+.seccion3 {
+    margin-top: -80px;
+}
+
+.titulo-section3 {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.subtitulo-section3 {
+    position: absolute;
+    font-size: 26px;
+    color: rgb(161, 161, 161);
+    background-color: transparent;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+.section-mujer-hombre-niño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 200px;
+    background-color: black;
+    width: 100%;
+    height: 1200px;
+    margin-top: 90px;
+}
+
+.categoria {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mujer, .hombre, .niño {
+    width: 550px;
+    height: 780px;
+    margin: 0; 
+}
+
+.texto-mujer, .texto-hombre, .texto-niño {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -80px;
+    margin-left: -300px;
+    text-shadow: 2px 2px 1px black;
+}
+
+.boton-mujer, .boton-hombre, .boton-niño {
+    color: #252525;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    margin-top: -65px;
+    margin-left: 300px;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+    background-color: transparent;
+}
+
+/*section4-regala zenrun*/
+
+.titulo-section4 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 150px;
+    margin-left: 180px;
+}
+
+/*CARDS*/
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    align-items: center;
+    width: 80%;
+    padding-top: 150px;
+    padding-left: 120px;
+  }
+  
+  .card {
+    width: 460px;
+    height: 530px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-left: -26px;
+    margin-bottom: 35px;
+  }
+  
+  .img-card {
+    width: 340px;
+    height: 350px;
+    background-color: #c1c2c4;
+    margin-top: -100px;
+  }
+  
+  .card-body {
+    background-color: transparent;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    background-color: transparent;
+    margin-top: 10px;
+  }
+
+/*section5-seccion zapatillas*/
+
+
+.seccion5 {
+    display: flex;
+    gap: 10px;
+    margin-left: 170px;
+}
+
+.titulo-section5 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+.section-zapatillas {
+    width: 350px;
+    height: 280px;
+    background-color: rgb(185, 185, 185);
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.img-zapato {
+    width: 340px;
+    height: 340px;
+    background-color: transparent;
+    margin-top: -50px;
+}
+
+/*section6-publicidad*/
+
+.seccion6 {
+    width: 1100px;
+    height: 650px;
+    background-color: #EFEFEF;
+    margin-top: 200px;
+    margin-left: 120px;
+}
+
+.publicidad {
+    width: 560px;
+    height: 650px;
+    margin-left: 1060px;
+}
+
+.titulo-section6 {
+    font-size: 70px;
+    font-family: sans-serif;
+    margin-top: -450px;
+    margin-left: 120px;
+    background-color: transparent;
+}
+
+.texto-section6 {
+    font-size: 24px;
+    color: rgb(85, 85, 85);
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.boton-pubicidad {
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #780001;
+    width: 190px;
+    height: 56px;
+    margin-top: 40px;
+    margin-left: 120px;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+}
+
+
+/*RESPONSIVE*/
+
+/*computador-1024px*/
+
+@media (max-width: 1024px) {
+  /*Portada*/
+  h1 {
+      font-size: 100px;
+      margin-top: -400px;
+      margin-left: 330px;
+  }
+
+  .texto-portada {
+    font-size: 16px;
+    margin-left: 385px;
+}
+
+.boton-portada {
+  margin-top: 40px;
+  margin-left: 420px;
+}
+  /*Explora la coleccion*/
+  .titulo-section2 {
+    margin-left: 330px;
+}
+  .productos {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 150px;
+  }
+
+  /*Solo en zenrun*/
+  
+  .titulo-section3 {
+      font-size: 40px;
+      padding-left: 250px;
+      margin-top: 40px;
+  }
+  
+  .subtitulo-section3 {
+      font-size: 26px;
+      margin-top: 90px;
+      padding-left: 340px;
+  }
+  
+  .section-mujer-hombre-niño {
+      flex-direction: column;
+      height: 2010px;
+  }
+  
+  .mujer {
+      width: 450px;
+      height: 600px;
+      margin-top: -110px;
+  }
+
+  .hombre {
+    width: 450px;
+    height: 600px;
+    margin-top: -170px;
+  }
+
+  .niño {
+    width: 450px;
+    height: 600px;
+    margin-top: -170px;
+  }
+
+  .texto-mujer, .texto-hombre, .texto-niño {
+    margin-left: -250px;
+    text-shadow: 2px 2px 1px black;
+  }
+
+  .boton-mujer, .boton-hombre, .boton-niño {
+    margin-left: 250px;
+  }
+
+  /*Regala zenrun*/
+  .titulo-section4 {
+    margin-left: 380px;
+  }
+  /*Seccion de zapatillas*/
+  .titulo-section5 {
+    margin-left: 340px;
+  }
+  .seccion5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 30px;
+    margin-left: 80px;
+  }
+  /*Seccion de publicidad*/
+  .seccion6 {
+    width: 600px;
+    height: 450px;
+    margin-top: 200px;
+    margin-left: 10px;
+}
+
+.publicidad {
+    width: 420px;
+    height: 450px;
+    margin-left: 572px;
+}
+
+.titulo-section6 {
+    font-size: 38px;
+    margin-top: -300px;
+    margin-left: 50px;
+}
+
+.texto-section6 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.boton-pubicidad {
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+}
+
+/*tablet-768px*/
+
+@media (max-width: 768px) {
+  /*Portada*/
+  h1 {
+      font-size: 90px;
+      margin-top: -400px;
+      margin-left: 210px;
+  }
+
+  .texto-portada {
+    font-size: 15px;
+    margin-left: 255px;
+}
+
+.boton-portada {
+  margin-top: 40px;
+  margin-left: 290px;
+}
+  /*Explora la coleccion*/
+  .titulo-section2 {
+    margin-left: 190px;
+}
+  .productos {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 40px;
+  }
+
+  .card {
+    width: 410px;
+    height: 470px;
+    margin-top: 30px;
+    margin-left: -26px;
+  }
+
+  /*Solo en zenrun*/
+  
+  .titulo-section3 {
+      font-size: 40px;
+      padding-left: 110px;
+      margin-top: 40px;
+  }
+  
+  .subtitulo-section3 {
+      font-size: 26px;
+      margin-top: 90px;
+      padding-left: 210px;
+  }
+  
+  .section-mujer-hombre-niño {
+      flex-direction: column;
+      height: 2010px;
+  }
+  
+  .mujer {
+      width: 450px;
+      height: 600px;
+      margin-top: -110px;
+  }
+
+  .hombre {
+    width: 450px;
+    height: 600px;
+    margin-top: -170px;
+  }
+
+  .niño {
+    width: 450px;
+    height: 600px;
+    margin-top: -170px;
+  }
+
+  .texto-mujer, .texto-hombre, .texto-niño {
+    margin-left: -250px;
+    text-shadow: 2px 2px 1px black;
+  }
+
+  .boton-mujer, .boton-hombre, .boton-niño {
+    margin-left: 250px;
+  }
+
+  /*Regala zenrun*/
+  .titulo-section4 {
+    margin-left: 260px;
+  }
+  /*Seccion de zapatillas*/
+  .titulo-section5 {
+    margin-left: 210px;
+  }
+  .seccion5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 30px;
+    margin-left: -14px;
+  }
+  /*Seccion de publicidad*/
+  .seccion6 {
+    width: 450px;
+    height: 350px;
+    margin-top: 200px;
+}
+
+.publicidad {
+    width: 310px;
+    height: 350px;
+    margin-left: 430px;
+}
+
+.titulo-section6 {
+    font-size: 30px;
+    margin-top: -300px;
+    margin-left: 20px;
+}
+
+.texto-section6 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.boton-pubicidad {
+    font-size: 15px;
+    width: 140px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+}
+
+/*tablet-375px*/
+
+@media (max-width: 375px) {
+  /*Portada*/
+
+  .img-portada {
+    height: 700px;
+  }
+  h1 {
+      font-size: 60px;
+      margin-top: -280px;
+      margin-left: 50px;
+  }
+
+  .texto-portada {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.boton-portada {
+  font-size: 19px;
+  margin-top: 40px;
+  margin-left: 80px;
+  width: 180px;
+  height: 45px;
+}
+  /*Explora la coleccion*/
+  .titulo-section2 {
+    font-size: 23px;
+    margin-left: 30px;
+    margin-top: 200px;
+}
+  .productos {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 40px;
+  }
+
+  .card {
+    width: 410px;
+    height: 470px;
+    margin-top: 30px;
+    margin-left: -26px;
+  }
+
+  /*Solo en zenrun*/
+  
+  .titulo-section3 {
+      font-size: 28px;
+      margin-left: -55px;
+      margin-top: 40px;
+  }
+  
+  .subtitulo-section3 {
+      font-size: 20px;
+      margin-top: 90px;
+      padding-left: 30px;
+  }
+  
+  .section-mujer-hombre-niño {
+      flex-direction: column;
+      height: 1900px;
+  }
+  
+  .mujer {
+      width: 320px;
+      height: 520px;
+      margin-top: -160px;
+  }
+
+  .hombre {
+    width: 320px;
+    height: 520px;
+    margin-top: -150px;
+  }
+
+  .niño {
+    width: 320px;
+    height: 520px;
+    margin-top: -150px;
+  }
+
+  .texto-mujer, .texto-hombre, .texto-niño {
+    font-size: 35px;
+    margin-left: -160px;
+    text-shadow: 2px 2px 1px black;
+  }
+
+  .boton-mujer, .boton-hombre, .boton-niño {
+    margin-top: -38px;
+    margin-left: 160px;
+    width: 120px;
+    height: 35px;
+  }
+
+  /*Regala zenrun*/
+  .titulo-section4 {
+    font-size: 28px;
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+  /*Seccion de zapatillas*/
+  .titulo-section5 {
+    font-size: 28px;
+    margin-left: 7px;
+    margin-top: 40px;
+  }
+  .seccion5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    margin-top: 30px;
+    margin-left: -14px;
+  }
+  /*Seccion de publicidad*/
+  .seccion6 {
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.publicidad {
+    width: 150px;
+    height: 200px;
+    margin-left: 195px;
+}
+
+.titulo-section6 {
+    font-size: 15px;
+    margin-top: -150px;
+    margin-left: 10px;
+}
+
+.texto-section6 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.boton-pubicidad {
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+}

@@ -1,0 +1,18 @@
+<section>
+  <section class="productos">
+    @for (producto of data; track $index) {
+    <div class="card">
+      <img
+        src="{{ producto.foto }}"
+        class="img-card card-img-top"
+        alt="{{ producto.nombre }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ producto.nombre }}</h5>
+        <p class="card-text">{{ producto.precio | currency}}</p>
+        <button type="button" class="boton-agregar btn btn-secondary">Agregar</button>
+      </div>
+    </div>
+    }
+  </section>
+</section>

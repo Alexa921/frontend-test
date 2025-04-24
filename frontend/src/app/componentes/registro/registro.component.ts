@@ -1,9 +1,9 @@
 
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { PeticionService } from '../../servicios/peticion.service';
+import { PeticionService } from '../../services/peticion.service';
 import Notiflix from 'notiflix';
-import { HeaderComponent } from '../header/header.component';
+import { HeaderComponent } from '../shared/header/header.component';
 import { CommonModule } from '@angular/common';
 
 @Component({

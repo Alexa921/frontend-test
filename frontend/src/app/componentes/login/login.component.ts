@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import Notiflix from 'notiflix';
-import { PeticionService } from '../../servicios/peticion.service';
-import { Router } from '@angular/router';
-import { HeaderComponent } from '../header/header.component';
+import { PeticionService } from '../../services/peticion.service';
+import { Router, RouterLink } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule, HeaderComponent],
+  imports: [FormsModule, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

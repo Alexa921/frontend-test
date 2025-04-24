@@ -1,8 +1,21 @@
-div#registro {
-    width: 375px;
-    background-color: lightblue;
+.registrar {
+    display: flex;
+    padding-top: 200px;
+}
+
+.registro {
+    width: 450px;
+    height: 400px;
+    background-color: #e9e9e9;
     padding: 49px;
-    border-radius: 16px;
-    margin: auto auto;
+    margin-left: 700px;
     margin-top: 70px;
+    padding-top: 75px;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #780000;
+    color: white;
+    margin-top: 20px;
 }

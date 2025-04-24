@@ -1,5 +1,6 @@
-<app-header></app-header>
-<div id="registro">
+
+<div class="registrar">
+  <div class="registro">
     <div class="form-group">
       <label for="email">Email address</label>
       <input type="email" class="form-control" id="email" [(ngModel)]="email">
@@ -8,5 +9,6 @@
       <label for="password">Password</label>
       <input type="password" class="form-control" id="password" [(ngModel)]="password">
     </div>
-    <button type="submit" class="btn btn-primary" (click)="login()">Iniciar sesion</button>
+    <button type="submit" class="btn" (click)="login()">Iniciar sesion</button>
   </div>
+</div>

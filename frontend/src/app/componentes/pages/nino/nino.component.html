@@ -1,0 +1,31 @@
+<!--SECTION1-portada-->
+
+<section class="portada">
+    <img class="img-portada" src="portada-niño.jpg" alt="Imagen portada">
+    <p class="texto1">DEPORTE</p>
+    <p class="texto2">DEPORTE</p>
+    <p class="texto3">DEPORTE</p>
+    <p class="texto4">DEPORTE</p>
+    <img class="logo-nike" src="logo-nike.png" alt="Logo de nike">
+</section>
+
+<!--SECTION2-cards-->
+
+<section>
+  <section class="productos">
+    @for (producto of productos; track $index) {
+    <div class="card">
+      <img
+        src="{{ producto.foto }}"
+        class="img-card card-img-top"
+        alt="{{ producto.nombre }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ producto.nombre }}</h5>
+        <p class="card-text">{{ producto.precio | currency}}</p>
+        <button type="button" class="boton-agregar btn btn-secondary">Agregar</button>
+      </div>
+    </div>
+    }
+  </section>
+</section>
