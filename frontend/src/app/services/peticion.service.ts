@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class PeticionService {
 
-  urlHost: string = 'http://localhost:3001';
+  urlHost: string = ' ';
   urlHostTest: string = 'http://localhost:3001';
 
   constructor(private http: HttpClient) { }
